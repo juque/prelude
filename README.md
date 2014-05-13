@@ -1,4 +1,5 @@
-# prelude
+prelude
+=======
 
 ## ¿Qué es?
 prelude es una plantilla (o grupo de las mismas) que contiene los elementos
