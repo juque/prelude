@@ -1,0 +1,5 @@
+*~
+.rvmrc
+.DS_Store
+.bundle
+tmp/*

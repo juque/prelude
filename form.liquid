@@ -1,0 +1,17 @@
+<h1>{{ form.title }}</h1>
+
+{% if form.sent %}
+
+    <div>
+        {{ 'forms.messages.sent' | t }}
+    </div>
+
+{% else %}
+
+    <div>
+        {{ form.body }}
+    </div>
+
+    {% contact_form_fields %}
+
+{% endif %}

@@ -1,0 +1,14 @@
+<h1>Detalle del producto {{ product.model }}</h1>
+{% if product.has_images %}
+<ul>
+{% for image in product.images  %}
+    <li> <a href="{{ image.large }}" title="{{ product.model }}" rel="overlay[product]"> <img src="{{ image.medium }}" alt="{{ product.model }}" /> </a> </li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% unless product.price.zero %}
+<p>Precio:{{product.price.format }} </p>
+{% endunless%}
+
+{% add_to_cart %}
